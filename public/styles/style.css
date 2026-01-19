@@ -1,0 +1,119 @@
+:root {
+  --navy: #2A3D51;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #243647, #3A5168);
+    position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  color: white;
+}
+
+/* HAMBURGER */
+.hamburger {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: white;
+}
+
+/* MENU */
+.mobile-nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #243647;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.mobile-nav a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* OPEN STATE */
+.mobile-nav.open {
+  display: flex;
+}
+
+main{
+
+}
+
+.hero {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #243647, #3A5168);
+  color: white;
+}
+
+.hero-name {
+   font-size: 2rem;
+   margin: 0;
+} 
+
+.hero-role {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0.5rem 0;
+}
+
+.hero-intro {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  max-width: 28rem;
+}
+
+.hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+
+/* Buttons (herbruikbaar) */
+.btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn.primary {
+  background: #4f6f8f;
+  color: white;
+}
+
+.btn.secondary {
+  background: white;
+  color: #243647;
+}
