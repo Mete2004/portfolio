@@ -69,7 +69,7 @@ main{
 
 }
 
-.hero {
+.section-hero {
   padding: 3rem 1.5rem;
   background: linear-gradient(135deg, #243647, #3A5168);
   color: white;
@@ -116,4 +116,59 @@ main{
 .btn.secondary {
   background: white;
   color: #243647;
+}
+
+.section-projects {
+  padding: 1rem;
+}
+
+.section-projects h2 {
+  margin: 0 0 1rem 0;
+}
+
+.project {
+  max-width: 420px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-media{
+  margin: 0;
+  padding: 0;
+}
+
+.project-media img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+.project-content h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.project-content p {
+  margin: 0;
+  color: #555;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem;
+  margin: 0;
+  list-style: none;
+}
+
+.project-tags li {
+  background: #e0e0e0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
 }
