@@ -1,5 +1,7 @@
 :root {
   --navy: #2A3D51;
+  --light-bg: #f3f3f3;
+  --cta-bg: #e9edf2;
 }
 
 body{
@@ -65,10 +67,6 @@ header{
   display: flex;
 }
 
-main{
-
-}
-
 .section-hero {
   padding: 3rem 1.5rem;
   background: linear-gradient(135deg, #243647, #3A5168);
@@ -118,17 +116,26 @@ main{
   color: #243647;
 }
 
+.btn.tertiary{
+  background: #4f6f8f;
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+
 .section-projects {
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
+  gap: 2.5rem;
 }
 
 .section-projects h2 {
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 -0.5rem 0;
 }
 
 .project {
   max-width: 420px;
-  background: #f3f3f3;
+  background-color: var(--light-bg);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -171,4 +178,54 @@ main{
   padding: 0.3rem 0.6rem;
   border-radius: 999px;
   font-size: 0.8rem;
+}
+
+/* Over mij */
+.section-about {
+  background-color: var(--light-bg);
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.section-about h2 {
+  margin: -0.8rem 0 0 0;
+}
+
+.about-text {
+  font-size: 0.95rem;
+  color: #444;
+  max-width: 32rem;
+  line-height: 1.6;
+}
+
+.about-actions {
+  margin-top: 1rem;
+}
+
+
+.section-cta {
+  padding: 0.9rem 1.5rem;
+  box-shadow: 0 -12px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.section-cta h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.site-footer {
+  text-align: center;
+
+  font-size: 0.85rem;
+  color: #666;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
 }
