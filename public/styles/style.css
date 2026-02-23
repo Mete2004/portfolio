@@ -2,6 +2,12 @@
   --navy: #2A3D51;
   --light-bg: #f3f3f3;
   --cta-bg: #e9edf2;
+
+
+  /* p */
+    --font-size-s: 0.9rem;
+
+    ---font-weight-bold: 500;
 }
 
 body{
@@ -50,9 +56,12 @@ header{
   right: 0;
   background: #243647;
   width: 100%;
-  display: none;
+  display: flex;
   flex-direction: column;
   z-index: 10;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
 .mobile-nav a {
@@ -60,11 +69,13 @@ header{
   padding: 1rem;
   text-decoration: none;
   border-top: 1px solid rgba(255,255,255,0.1);
+  font-weight: var(---font-weight-bold);
 }
 
 /* OPEN STATE */
 .mobile-nav.open {
   display: flex;
+  max-height: 500px;
 }
 
 
@@ -180,7 +191,8 @@ header{
   background: #e0e0e0;
   padding: 0.3rem 0.6rem;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: var(--font-size-s);
+  font-weight: var(---font-weight-bold);
 }
 
 .project-link {
@@ -249,7 +261,9 @@ header{
   background: #e0e0e0;
   padding: 0.3rem 0.6rem;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: var(--font-size-s);
+  color: black;
+  font-weight: var(---font-weight-bold);
 }
 
 .project-content-detail{
