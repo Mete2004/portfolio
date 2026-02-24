@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,25 +16,9 @@
 </head>
 <body>
 
-    <?php include 'header.php'?>
+    <?php require_once '../php/header.php'; ?>
 
-    <header>
-
-        <div class="logo">METE</div>
-
-        <button class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="mobile-nav" id="mobileNav">
-            <a href="#home">Home</a>
-            <a href="projects.html">Projecten</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-    </header>
+    
 
     <main>
 
