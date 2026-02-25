@@ -16,91 +16,38 @@ ini_set('display_errors', 1);
 </head>
 <body>
 
-    <?php require_once '../php/header.php'; ?>
-
-    
+<!-- Header -->
+<?php require_once '../includes/header.php'; ?>
+<!-- /Header -->
 
     <main>
-
         <section class="section-hero">
         <h1 class="hero-name">Mete</h1>
         <p class="hero-role">Frontend & UI/UX Designer</p>
         <p class="hero-intro">Korte introductietekst hier.</p>
 
         <div class="hero-actions">
-            <a href="#projects" class="btn primary">Bekijk projecten</a>
-            <a href="#contact" class="btn secondary">Contact</a>
+            <a href="projects.php" class="btn primary">Bekijk alle projecten</a>
+            <a href="contact.php" class="btn secondary">Contact</a>
         </div>
         </section>
 
         <section class="section-projects">
             <h2>Projecten</h2>
 
-            <a href="project-detail.html" class="project-link"> 
-            <article class="project">
-                <figure class="project-media">
-                    <img
-                    src="assets/project-afbeelding1.png"
-                    alt=""
-                    >
-                </figure>
+        <?php
+        require_once '../data/projects.php'; 
 
-                <div class="project-content">
-                    <h3>Restaurant Website</h3>
-                    <p>Korte omschrijving</p>
-                </div>
+        $homeProjects = [
+            'restaurant',
+            'webshop'
+        ];
 
-                <ul class="project-tags">
-                    <li>UI/UX</li>
-                    <li>Frontend</li>
-                    <li>Responsive</li>
-                </ul>
-            </article>
-            </a>
-
-            <a href="project-detail.html" class="project-link">
-            <article class="project">
-                <figure class="project-media">
-                    <img
-                    src="assets/project-afbeelding1.png"
-                    alt=""
-                    >
-                </figure>
-
-                <div class="project-content">
-                    <h3>Restaurant Website</h3>
-                    <p>Korte omschrijving</p>
-                </div>
-
-                <ul class="project-tags">
-                    <li>UI/UX</li>
-                    <li>Frontend</li>
-                    <li>Responsive</li>
-                </ul>
-            </article>
-            </a>
-
-            <a href="project-detail.html" class="project-link">
-            <article class="project">
-                <figure class="project-media">
-                    <img
-                    src="assets/project-afbeelding1.png"
-                    alt=""
-                    >
-                </figure>
-
-                <div class="project-content">
-                    <h3>Restaurant Website</h3>
-                    <p>Korte omschrijving</p>
-                </div>
-
-                <ul class="project-tags">
-                    <li>UI/UX</li>
-                    <li>Frontend</li>
-                    <li>Responsive</li>
-                </ul>
-            </article>
-            </a>
+        foreach ($homeProjects as $key) {
+            $project = $projects[$key];
+            require '../includes/project-card.php';
+        }
+        ?>
 
         </section>
 
@@ -121,16 +68,15 @@ ini_set('display_errors', 1);
         <section class="section-cta">
             <h2>Klaar voor een website?</h2>
 
-            <a href="contact.html" class="btn tertiary">
+            <a href="contact.php" class="btn tertiary">
                 Neem contact op
             </a>
         </section>
-
     </main>
 
-    <footer class="site-footer">
-        <p>mete.sariguney@hva.nl</p>
-    </footer>    
+    <!-- Footer -->
+    <?php require_once '../includes/footer.php'; ?>
+    <!-- /Footer -->    
 
     <script src="js/main.js"></script>
 </body>

@@ -10,23 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    
+    <!-- Header -->
+    <?php require_once '../includes/header.php'; ?>
+    <!-- /Header -->
 
-        <div class="logo">METE</div>
+    <main>
 
-        <button class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <?php
+    require_once '../data/projects.php';
+    ?>
 
-        <nav class="mobile-nav" id="mobileNav">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projecten</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
+    <section class="section-projects">
+    <?php
+    foreach ($projects as $project) {
+        require '../includes/project-card.php';
+    }
+    ?>
+    </section>
+        
+    </main>
 
-    </header>
+    <!-- Footer -->
+    <?php require_once '../includes/footer.php'; ?>
+    <!-- /Footer -->    
 
     <script src="js/main.js"></script>
 </body>

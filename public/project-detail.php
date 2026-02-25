@@ -1,3 +1,10 @@
+<?php
+require_once '../data/projects.php';
+
+$id = $_GET['id'] ?? null;
+$project = $projects[$id] ?? null;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,32 +17,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">METE</div>
-
-        <button class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="mobile-nav" id="mobileNav">
-            <a href="index.html">Home</a>
-            <a href="projecten.html">Projecten</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    
+    <!-- Header -->
+    <?php require_once '../includes/header.php'; ?>
+    <!-- /Header -->
 
     <main>
 
         <!-- HERO / PROJECT HEADER -->
         <section class="section-hero-detail">
-            <a href="projects.html" class="back-link">← Terug naar projecten</a>
+            <a href="projects.php" class="back-link">← Terug naar projecten</a>
 
             <div class="hero-content">
-                <h1 class="hero-name">Portfolio Website</h1>
-                <p class="hero-role">UI/UX & Frontend</p>
+                <h1 class="hero-name">
+                    <?= $project['title'] ?? 'Project niet gevonden' ?>
+                </h1>
 
+                <p class="hero-role">UI/UX & Frontend</p>
+                
                 <ul class="project-tags-detail">
                     <li>UI/UX</li>
                     <li>Frontend</li>
@@ -48,7 +47,7 @@
         <section class="section-projects">
             <article class="project">
             <figure class="project-media">
-                <img src="assets/project-afbeelding1.png" alt="Project visual">
+                <img src="<?= $project['image'] ?? '' ?>" alt="Project visual">
             </figure>
 
             <div class="project-content-detail">
@@ -61,7 +60,7 @@
         <section class="section-about">
             <h2>Over dit project</h2>
             <p class="about-text">
-                Korte omschrijving hier.
+                <?= $project['description'] ?? '' ?>
             </p>
 
             <h2>Mijn rol</h2>
@@ -90,9 +89,9 @@
 
     </main>
 
-    <footer class="site-footer">
-        <p>mete.sariguney@hva.nl</p>
-    </footer>
+    <!-- Footer -->
+    <?php require_once '../includes/footer.php'; ?>
+    <!-- /Footer -->    
 
     <script src="js/main.js"></script>
 </body>
