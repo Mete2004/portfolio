@@ -2,23 +2,20 @@
 $projects = [
     "restaurant" => [
         "title" => "Restaurant Website",
-        "description" => "Volledige uitleg over dit project.",
+        "description" => " Details over het restaurant project.",
         "image" => "assets/project-afbeelding1.png",
-        "tags" => ["UI/UX","Frontend","Responsive"],
-        "link" => "project-detail.php?id=restaurant"
+        "tags" => ["UI/UX","Frontend","Responsive"]
     ],
     "portfolio" => [
         "title" => "Portfolio Website",
-        "description" => "Details over portfolio project.",
+        "description" => "Details over het portfolio project.",
         "image" => "assets/project-afbeelding1.png",
-        "tags" => ["UI/UX","Frontend","Responsive",],
-        "link" => "project-detail.php?id=portfolio"
+        "tags" => ["UI/UX","Frontend","Responsive",]
     ],
     "webshop" => [
-        "title" => "Portfolio Website",
-        "description" => "Details over portfolio project.",
+        "title" => "Webshop Website",
+        "description" => "Details over het webshop project.",
         "image" => "assets/project-afbeelding1.png",
-        "tags" => ["UI/UX","Frontend","Responsive"],
-        "link" => "project-detail.php?id=webshop"
+        "tags" => ["UI/UX","Frontend","Responsive"]
     ]
 ];

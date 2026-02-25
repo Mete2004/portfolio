@@ -23,7 +23,7 @@
 
     <section class="section-projects">
     <?php
-    foreach ($projects as $project) {
+    foreach ($projects as $key => $project) {
         require '../includes/project-card.php';
     }
     ?>

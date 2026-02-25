@@ -1,5 +1,4 @@
-<a href="<?= $project['link'] ?>" class="project-link">
-    <article class="project">
+<a href="project-detail.php?id=<?= $key ?>" class="project-link">    <article class="project">
         <figure class="project-media">
             <img src="<?= $project['image'] ?>" alt="">
         </figure>
