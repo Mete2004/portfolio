@@ -3,6 +3,7 @@
   --light-bg: #f3f3f3;
   --cta-bg: #e9edf2;
 
+  --navy-h: #121b24;
 
   /* p */
     --font-size-s: 0.9rem;
@@ -143,7 +144,8 @@ header{
 }
 
 .section-projects h2 {
-  margin: 1rem 0 -0.5rem 0;
+  margin: 1rem 0 -0.5rem 0.2rem;
+  color: var(--navy-h);
 }
 
 .project {

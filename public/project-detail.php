@@ -36,9 +36,9 @@ $project = $projects[$id] ?? null;
                 <p class="hero-role">UI/UX & Frontend</p>
                 
                 <ul class="project-tags-detail">
-                    <li>UI/UX</li>
-                    <li>Frontend</li>
-                    <li>Responsive</li>
+                <?php foreach ($project['tags'] as $tag): ?>
+                <li><?= $tag ?></li>
+                <?php endforeach; ?>
                 </ul>
             </div>
         </section>

@@ -17,5 +17,11 @@ $projects = [
         "description" => "Details over het webshop project.",
         "image" => "assets/project-afbeelding1.png",
         "tags" => ["UI/UX","Frontend","Responsive"]
+    ],
+    "kapper" => [
+        "title" => "Kapper Website",
+        "description" => "Details over het webshop project.",
+        "image" => "assets/project-afbeelding1.png",
+        "tags" => ["UI/UX","Frontend","Responsive"]
     ]
 ];
