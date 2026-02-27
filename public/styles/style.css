@@ -156,17 +156,18 @@ header{
   box-shadow: 5px 5px 6px rgba(0,0,0,0.08);
 }
 
-.project-media{
+.project-media {
   margin: 0;
   padding: 0;
-  height: 12.5rem;
-  
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
 }
 
 .project-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;     
+  object-position: center;
 }
 
 .project-content {
