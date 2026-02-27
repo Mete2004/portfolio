@@ -51,7 +51,9 @@ $project = $projects[$id] ?? null;
             </figure>
 
             <div class="project-content-detail">
-                <a href="#" class="btn primary">Bekijk Live Website ↗</a>
+                <a href="<?= $project['live'] ?>" target="_blank" rel="noopener" class="btn primary">
+                    Bekijk Live Website ↗
+                </a>
             </div>
             </article>
         </section>
