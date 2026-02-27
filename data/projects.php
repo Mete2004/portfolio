@@ -4,7 +4,8 @@ $projects = [
         "title" => "Restaurant Website",
         "description" => " Details over het restaurant project.",
         "image" => "assets/restaurant-website.png",
-        "tags" => ["UI/UX","Frontend","Responsive"]
+        "tags" => ["UI/UX","Frontend","Responsive"],
+        "live" => "/projects/Eind_Examen_Restaurant_local/web"
     ],
     "portfolio" => [
         "title" => "Portfolio Website",
